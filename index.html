@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Elementor</title>
+
+    <!--------- Google Fonts --------->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!---------- Font Awesome  ( 5.15.4 ) --------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--------- My CSS --------->
+    <link rel="stylesheet" href="./Asset/css/style.css">
+</head>
+<body>
+
+
+
+    <!---------- Header Start ----------->
+    <header class="header">
+
+        <!------ Header Left ----->
+        <div class="left-header header-item">
+            <div class="logo">
+                <a href="#"> <img src="./Asset/Img/logo.png" alt=""></a>
+            </div>
+            <div>
+                <span><i class="fas fa-plus"></i></span>
+            </div>
+            <div>
+                <span><i class="fas fa-sliders-h"></i></span>
+            </div>
+            <div>
+                <span><i class="fas fa-layer-group"></i></span>
+            </div>
+        </div>
+
+        <!------ Header Middle ----->
+        <div class="middle-header header-item">
+            <div class="m-menu">
+                <p>Home <i class="fas fa-chevron-down"></i></p>
+                <div>
+                    <span><i class="fas fa-cog"></i></span>
+                </div>
+            </div>
+            <div>
+                <span><i class="fas fa-desktop"></i></span>
+            </div>
+            <div>
+                <span><i class="fas fa-tablet-alt"></i></span>
+            </div>
+            <div>
+                <span><i class="fas fa-mobile-alt"></i></span>
+            </div>
+        </div>
+
+        <!------ Header Right ----->
+        <div class="right-header header-item">
+            <div> 
+                <span><i class="fas fa-search"></i></span>
+            </div>
+            <div>
+                <span><i class="fas fa-question-circle"></i></span>
+            </div>
+            <div class="eye">
+                <span><i class="fas fa-eye"></i></span>
+            </div>
+            <div class="header-btn">
+                <button class="publish">Publish</button>
+                <button class="p-icon"><i class="fas fa-chevron-down"></i></button>
+            </div>
+        </div>
+
+    </header>
+
+    <!---------- Header End ----------->
+
+
+    <div class="body">
+
+        <!-------- Left Sidebar Start --------->
+        <div class="left-sidebar">
+            <h3>Edit Heading</h3>
+
+            <div class="sidebar-menu">
+                <span class="content"><i class="fas fa-pencil-alt"></i> Content</span>
+                <span class="style-menu"><i class="fas fa-yin-yang"></i> Style</span>
+                <span class="advance"><i class="fas fa-cog"></i>  Advance</span>
+            </div>
+
+            <div class="title">
+                <label>Title</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your title" >Add Your Heading Text Here</textarea>
+            </div>
+
+            <div class="style">
+
+                <div class="color">
+                    <p>Text Color</p>
+                    <div>
+                        <span><i class="fas fa-globe"></i></span>
+                        <input type="color" name="" id="" value="#6EC1E4">
+                    </div>
+                </div>
+
+                
+                <div class="typography">
+                    <p>Typography</p>
+                    <div>
+                        <span><i class="fas fa-globe"></i></span>
+                        <span class="menu-show"><i class="fas fa-pen"></i></span>
+                    </div>
+                </div>
+
+                <div class="typography-menu">
+                    <div class="triangle"></div>
+                    <div class="t-menu-top">
+                        <p>Typography</p>
+                        <div class="t-menu-top-left">
+                            <span><i class="fas fa-undo-alt"></i></span>
+                            <span><i class="fas fa-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="typography-body">
+                        
+                        <div class="font">
+                            <p>Family</p>
+                                <select name="" id="" form="">
+                                    <option value="volvo">Roboto</option>
+                                    <option value="saab">Popins</option>
+                                    <option value="opel">Popins</option>
+                                    <option value="audi">Popins</option>
+                              </select>
+                        </div>
+                        <div class="size">
+                            <div class="size1">
+                                <p>Size <i class="fas fa-desktop"></i></p>
+                                <span>px</span>
+                            </div>
+                            <div class="range">
+                                <input type="range" name="" id="">
+                                <input type="text" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-------- Left Sidebar End --------->
+
+
+        <!-------- Body Right Side Start --------->
+
+        <div class="body-right">
+
+            <div class="heading-container">
+                <div class="container-edit-option">
+                    <span><i class="fas fa-plus"></i></span>
+                    <span><i class="fas fa-ellipsis-h"></i></span>
+                    <span><i class="fas fa-times"></i></span>
+                </div>
+                <div class="heading-title">
+                    <span><i class="fas fa-pen"></i></span>
+                    <h2></h2>
+                </div>
+                
+            </div>
+
+            <div class="add-new">
+                <div>
+                    <div class="new-container">
+                        <span><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="new-template">
+                        <span><i class="fas fa-folder"></i></span>
+                    </div>
+                </div>
+                <p>Drag widget here</p>
+            </div>
+
+        </div>
+
+        
+
+
+
+        <!-------- Body Right Side End --------->
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--------- My JS --------->
+    <script src="./App/data.js"></script>
+    <script src="./App/function.js"></script>
+    <script src="./App/main.js"></script>
+</body>
+</html>
+
+

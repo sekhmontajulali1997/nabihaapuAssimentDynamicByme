@@ -1,0 +1,517 @@
+body, h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+/******* All Color ********/
+
+:root {
+    --icon-color: #515962; 
+    --menu-icon: #ffffff;
+    --menu-icon-hover: #1F2021;
+    --widget-hover-bg: #F1F2F3;
+    --heading-color: #6ec1e4;
+    --font: #0c0d0e;
+    --primary: #f0abfc;
+    --button-hover:#EB8EFB;
+    --border: #e6e8ea;
+}
+
+
+
+
+/******** Default Css ********/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align-last: center;
+}
+
+
+
+/*
+* Header Start 
+*/
+
+.header{
+    background-color: #0c0d0e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:  12px;
+}
+
+.header-item{
+    display: flex;
+    align-items: center;
+}
+
+.header-item div span{
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color:var(--menu-icon);
+    margin-left: 10px;
+    cursor: pointer;
+} 
+
+
+/* Left Header */
+
+.left-header{
+    width: 22.4%;
+}
+
+.left-header .logo img{
+    width: 32px;
+    margin-bottom: -4px;
+}
+
+/* Middle Header */
+
+.middle-header{
+    padding-right: 10px;
+    border-right: 1px solid var(--icon-color);
+}
+
+.middle-header p:hover,
+.header-item div span:hover{
+    background-color: var(--menu-icon-hover);
+}
+
+/* Middle Header Menu */
+.m-menu{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-left: 1px solid var(--icon-color);
+    border-right: 1px solid var(--icon-color);
+    height: 48px;
+}
+
+.middle-header .m-menu p{
+    color: var(--menu-icon);
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.middle-header p i{
+    font-size: 12px;
+    color: var(--icon-color);
+    margin-left: 5px;
+}
+
+.header-btn{
+    display: flex;
+}
+
+
+/* Publish Button */
+
+.right-header button{
+    font-size: 19px;
+    font-weight: 500;
+    border: none;
+    color: var(--font);
+    background-color: var(--primary);
+    height: 48px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.right-header button:hover{
+    background-color: var(--button-hover);
+}
+
+.eye span{
+    margin-right: 10px;
+}
+
+.right-header button.publish{
+    padding: 0px 28px;
+    border-right: 1px solid var(--button-hover);
+
+}
+
+.right-header button.p-icon{
+    padding: 0px 18px;
+    font-size: 14px;
+}
+
+.right-header{
+    padding-left: 10px;
+    border-left: 1px solid var(--icon-color);
+}
+
+/*
+* Header End 
+*/
+
+
+.body{
+    display: flex;
+}
+
+
+/*
+* Sidebar Start 
+*/
+
+.left-sidebar{
+    width: 20.65%;
+    padding: 0 20px;
+    border-right: 1px solid var(--border);
+    height: 100vh;
+}
+
+.left-sidebar h3{
+    font-size: 15px;
+    text-align: center;
+    line-height: 48px;
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* Sidebar Menu */
+
+.sidebar-menu span i{
+    display: block;
+}
+
+.sidebar-menu{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 35px;
+}
+
+.sidebar-menu span{
+    width: 33.333333333333333%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 10px;
+    color: var(--icon-color);
+    transition: .3s;
+}
+
+.sidebar-menu span:hover{
+    background-color: var(--widget-hover-bg);
+}
+
+.sidebar-menu span:first-child {
+    border-bottom: 3px solid #000;
+}
+
+.sidebar-menu span i{
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+
+
+/* Conten Menu Inside */
+
+.title label{
+    display: block;
+    font-size: 12px;
+    color: var(--icon-color);
+    margin-bottom: 8px;
+}
+
+.title textarea{
+    padding: 5px;
+    width: 100%;
+    border: 1px solid var(--border);
+    outline: none;
+    color: var(--icon-color);
+}
+
+.style{
+ display: none;
+}
+
+.typography,
+.style .color{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.typography p,
+.style .color p{
+    font-size: 12px;
+    color: var(--icon-color);
+}
+
+.typography span,
+.style .color span{
+    font-size: 12px;
+    padding: 8px;
+    border: 1px solid var(--border);
+    display: inline-block;
+    color: var(--icon-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.typography span:hover,
+.style .color span:hover{
+    background-color: var(--widget-hover-bg);
+}
+
+.style .color span{
+    border-radius: 3px 0 0 3px;
+}
+
+.typography div,
+.color div{
+    display: flex;
+
+}
+.color input{
+    width: 30px;
+    height: 32px;
+    border:1px solid var(--border);
+    border-radius: 0px 3px 3px 0px ;
+    padding: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.typography span{
+    border-radius: 0px 3px 3px 0px;
+}
+
+.typography span:last-child{
+    background-color: #d5d8dc;
+}
+
+
+/* Typography Menu */
+
+.typography-menu{
+    box-shadow: 0px 0px 10px #0000004b;
+    border-radius: 3px;
+    position: relative;
+    margin-top: 22px;
+    display: none;
+}
+
+.t-menu-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 12px;
+    color: var(--icon-color);
+}
+
+.t-menu-top-left span{
+    box-shadow: 0px 0px 3px #00000023;
+    padding: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.typography-body{
+    padding: 10px;
+}
+
+.typography-body .font,
+.typography-body .size{
+    font-size: 12px;
+    color: var(--icon-color);
+}
+
+.font,
+.range,
+.size1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+
+.font select{
+    width: 110px;
+    outline: none;
+    padding: 6px;
+    border: 1px solid var(--border);
+    color: var(--icon-color);
+    font-size: 12px;
+}
+.triangle{
+    clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    box-shadow: 0px 0px 10px #000000 !important;
+}
+.size1 p i{
+    font-size: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.size1 p i:hover{
+    color: var(--button-hover);
+}
+
+.range input[type="range"]{
+    width: 160px;
+}
+
+.range input[type="text"]{
+    width: 55px;
+    outline: none;
+    border: 1px solid var(--border);
+    padding: 6px;
+}
+
+/*
+* Sidebar End 
+*/
+
+
+
+
+
+/*
+* Body Right Side Start 
+*/
+
+
+.body-right{
+    padding: 50px 10px 0 10px;
+    width: 79.35%;
+}
+
+.heading-container{
+    border: 2px solid var(--primary);
+    padding: 10px;
+    position: relative;
+}
+
+.container-edit-option {
+    clip-path: polygon(10% 0%, 91% 0%, 100% 26%, 0 26%);
+    background-color: var(--primary);
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    position: absolute;
+    top: -24px;
+    left: 46%;
+    cursor: pointer;
+}
+
+.container-edit-option span{
+    margin-right: 8px;
+}
+.container-edit-option span:last-child{
+    margin-right: 0px;
+}
+
+.heading-title{
+    text-align: center;
+    font-size: 22px;
+    padding: 5px;
+    border: 2px solid var(--primary);
+    position: relative;
+    color: var(--heading-color);
+}
+
+.heading-title span{
+    font-size: 10px;
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--primary);
+    border-radius: 0 0 0 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: var(--font);
+}
+
+/* Add new Section */
+
+.add-new{
+    margin: 100px 10px;
+    padding: 40px 0;
+    border: 2px dashed var(--border);
+}
+.add-new div{
+    display: flex;
+    justify-content: center;
+}
+
+
+.add-new div span{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--primary);
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.add-new .new-template span{
+    background-color: var(--icon-color);
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--menu-icon);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.add-new .new-container span:hover{
+    background-color: #f5d0fe;
+}
+
+.add-new .new-template span:hover{
+    background-color:#3a4046;
+}
+
+.add-new p{
+    text-align: center;
+    font-size: 13px;
+    color: var(--icon-color);
+    margin-top: 14px;
+}
+
+
+/*
+* Body Right Side End 
+*/
