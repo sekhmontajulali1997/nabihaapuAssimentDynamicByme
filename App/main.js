@@ -46,11 +46,13 @@ const addheadingtitle = document.querySelector('h2');
 const rangeTag = document.querySelector('.range input');
 const color = document.querySelector('.color input');
 const textarea = document.querySelector('.title textarea');
+const allFont = document.querySelectorAll('.font option');
 
 
 
 rangeTag.oninput = (e)=>{
     const val = e.target.value;
+    pxal.innerHTML = val;
     addheadingtitle.style.fontSize = `${val}px `;
 }
 color.oninput = (e)=>{
@@ -64,3 +66,50 @@ textarea.addEventListener('keyup', function(e){
 });
 
 
+// font family  
+
+// allFont.forEach((item, index) => {
+        
+//     allFont.onclick = () =>{
+//         if (index ==0) {
+//             addheadingtitle.style.color = 'red';
+                    
+//                 } else if(index ==1){
+//                     addheadingtitle.style.fontFamily =`'Poppins', sans-serif`;
+        
+//                 } else if(index ==2){
+//                     addheadingtitle.style.fontFamily =`'Pangolin', cursive`;
+        
+//                 }
+
+//     }
+
+// })
+
+allFont.forEach((item, index)=>{
+
+    item.onclick = () =>{
+        if (index == 0) {
+            addheadingtitle.style.fontFamily ='Roboto'
+           
+            
+        }
+        else if (index == 1) {
+           
+            addheadingtitle.style.fontFamily ='Poppins';
+            
+            
+        }
+        else if (index == 2) {
+            
+            addheadingtitle.style.fontFamily ='Pangolin';
+            
+        }
+
+
+    }
+    // item.onclick('click',function(){
+        
+    // });
+
+})
